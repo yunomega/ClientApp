@@ -1,6 +1,5 @@
 package com.quick.app
 
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -19,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.quick.app.ui.theme.ClientAppTheme
+import androidx.compose.ui.graphics.Color
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +48,7 @@ fun MyButton(title: String) {
         },
         modifier = Modifier
             .fillMaxWidth()
+            .background(Color.Red)
     ) {
         Text(text = title)
     }
